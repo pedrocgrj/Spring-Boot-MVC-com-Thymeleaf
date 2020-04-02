@@ -22,17 +22,17 @@ public class Endereco extends AbstractEntity<Long> {
 	
 	@Column(nullable = false, length = 9)
 	private String cep;
-
+	
 	@Column(nullable = false, length = 5)
-	private String numero;
+	private Integer numero;
 	
 	private String complemento;
 
-	public String getLogradoiro() {
+	public String getLogradouro() {
 		return logradouro;
 	}
 
-	public void setLogradoiro(String logradouro) {
+	public void setLogradouro(String logradouro) {
 		this.logradouro = logradouro;
 	}
 
@@ -68,11 +68,11 @@ public class Endereco extends AbstractEntity<Long> {
 		this.cep = cep;
 	}
 
-	public String getNumero() {
+	public Integer getNumero() {
 		return numero;
 	}
 
-	public void setNumero(String numero) {
+	public void setNumero(Integer numero) {
 		this.numero = numero;
 	}
 
@@ -83,5 +83,4 @@ public class Endereco extends AbstractEntity<Long> {
 	public void setComplemento(String complemento) {
 		this.complemento = complemento;
 	}
-	
 }
